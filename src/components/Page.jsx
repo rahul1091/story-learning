@@ -1,7 +1,6 @@
-import {
-	storyblokEditable,
-	StoryblokServerComponent,
-} from '@storyblok/react/rsc';
+"use client";
+import { StoryblokComponent } from '@storyblok/react/rsc';
+import { storyblokEditable, StoryblokServerComponent } from '@storyblok/react/rsc';
 
 const Page = ({ blok }) => (
 	<main {...storyblokEditable(blok)}>
