@@ -11,7 +11,7 @@ const Grid = ({ blok }) => {
 			<div className='container mx-auto w-full px-4'>
 				<h2 className='text-3xl md:text-4xl font-bold' style={{ color: headlineColor }}>{blok.headline}</h2>
 				<div className='grid lg:grid-flow-col auto-cols-fe mt-12 gap-8'>
-					{blok.items.map((nestedBlok) => (
+					{blok.items?.map((nestedBlok) => (
 						<StoryblokServerComponent blok={nestedBlok} key={nestedBlok._uid} />
 					))}
 				</div>
